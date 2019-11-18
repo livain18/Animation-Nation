@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    background-color:white ;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blackcont {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    background-color: white;
+    margin: 0 auto;
+    align-self: center;
+    max-width: 600px;
+    min-width: 400px;
+
+}
+
+.one {
+    width: calc(100% / 3);
+    height: 100%;;
+    background-color: red;
+    align-self: center;
+    position: relative;
+    -webkit-animation-name: one;  /* Safari 4.0 - 8.0 
+*/    -webkit-animation-duration: 9s;  /* Safari 4.0 - 8.0 */  
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    /*-webkit-animation-direction: alternate;*/
+    -webkit-animation-iteration-count: 1; 
+    -webkit-animation-timing-function: linear;
+    animation-name: one;
+    animation-duration: 9s;  
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.B {
+
+    position: relative;
+    top: 50%;
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 200px;
+    margin-top: -120px;
+    opacity: 0%;
+    animation-name: showEffect;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration:3s;
+    animation-delay: 10s
+
+}
+
+
+.two {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: yellow;
+    align-self: center;
+    position: relative;
+    -webkit-animation-name: two;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 9s;  /* Safari 4.0 - 8.0 */  
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    /*-webkit-animation-direction: alternate;*/
+    -webkit-animation-iteration-count: 1; 
+    -webkit-animation-timing-function: linear;
+    animation-name: two;
+    animation-duration: 9s;  
+    animation-fill-mode: forwards;
+    /*animation-direction: alternate;*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    
+}
+
+.E {
+    
+    ;
+    position: relative;
+    top: 50%;
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 200px;
+    margin-top: -120px;
+    opacity: 0%;
+    animation-name: showEffect;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration:3s;
+    animation-delay: 9s;
+    
+}
+
+.three {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: black;
+    align-self: center;
+     position: relative;
+    /*-webkit-animation-name: three;  /* Safari 4.0 - 8.0 */*/
+    -webkit-animation-duration: 9s;  /* Safari 4.0 - 8.0 */  
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+   /* -webkit-animation-direction: alternate;*/
+    -webkit-animation-iteration-count: 1; 
+    -webkit-animation-timing-function: linear;
+    animation-name: three;
+    animation-duration: 9s;  
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.L {
+    
+    position: relative;
+    top: 50%;
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 200px;
+    margin-top: -120px;
+    opacity: 0%;
+    animation-name: showEffect;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration:3s;
+    animation-delay: 8s
+
+}
+
+@media only screen and (max-width: 800px){
+    .blackcont{
+        transition: all 0.5s ease;
+        width: 450px;
+        
+    }
+}
+
+
+@keyframes three {
+  0%   {background-color:red; top:0%;}
+  33.33333%  {background-color:yellow;  top:125%;}
+  66.66666%  {background-color:black;  top:-125%;}
+  100%  {background-color:red;  top:0%;}
+}
+
+@keyframes two {
+  0%   {background-color:yellow; top:0%;}
+  14.285714%  {background-color:black;  top:125%;}
+  28.571428%  {background-color:red;  top:-125%;}
+  42.857142%  {background-color:black;  top:125%;}
+  57.142857%  {background-color:yellow; top:-125%;}
+  71.428571%  {background-color:black;  top:125%;}
+  85.714285%  {background-color:red;  top:-125%;}
+  100%  {background-color:yellow;  top:0%;}
+}
+
+@keyframes one {
+  0%   {background-color:black; top:0%;}
+  9.090909%  {background-color:red;  top:125%;}
+  18.181818%  {background-color:yellow;  top:-125%;}
+  27.272727%  {background-color:red;  top:125%;}
+  36.363636%   {background-color:black; top:-125%;}
+  45.454545%  {background-color:red;  top:125%;}
+  54.545454%  {background-color:yellow;  top:-125%;}
+  63.636363%  {background-color:red;  top:125%;}
+  72.727272%   {background-color:black; top:-125%;}
+  81.818181%  {background-color:yellow;  top:125%;}
+  90.909090%  {background-color:red;  top:-125%;}
+  100%  {background-color:black;  top:0%;}
+}
+
+
+@-moz-keyframes showEffect {
+       0% { opacity: 0%; top: -25%; }
+    100% { opacity:100% ; top: 50%;  }
+
+}
+@-webkit-keyframes showEffect {
+    0% { opacity: 0%; top: -25%; }
+    100% { opacity:100% ; top: 50%;  }
+
+}
+@keyframes showEffect {
+       0% { opacity: 0%; top: -25%; }
+    100% { opacity:100% ; top: 50%;  }
+}
